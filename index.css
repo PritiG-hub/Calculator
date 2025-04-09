@@ -1,0 +1,108 @@
+/* Reset */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #b4b0a7ea, #eeeaea);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator Container */
+.calculator {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Display Screen */
+#display {
+  width: 90%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #f5f5f5;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 5px rgba(255, 255, 255, 0.7);
+  text-align: right;
+  font-size: 1.8rem;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Buttons Container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1),
+    -3px -3px 8px rgba(255, 255, 255, 0.8);
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #d4d4d4, #ffffff);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+    -2px -2px 5px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* Operators */
+.operator {
+  background: linear-gradient(145deg, #5aa0f1, #3a68e7);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1),
+    -3px -3px 8px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+}
+
+.operator:hover {
+  background: linear-gradient(145deg, #9360f0, #9360f0);
+}
+
+/* Equals Button */
+.equal {
+  grid-column: span 4;
+  background: linear-gradient(145deg, #7594fc, #7b79e6);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1),
+    -3px -3px 8px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.equal:hover {
+  background: linear-gradient(145deg, #84f362, #32a140ee);
+  transform: scale(1.05);
+}
+
+/* Clear Button */
+#clear {
+  background: linear-gradient(145deg, #9ffae6, #45addd);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1),
+    -3px -3px 8px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#clear:hover {
+  background: linear-gradient(145deg, #8c82e4, #adb8f5);
+}
